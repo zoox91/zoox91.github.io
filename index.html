@@ -1,0 +1,1269 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>av虎威迷失网站_视频品牌官方门户_高清原创内容生态</title>
+<meta name="description" content="av虎威迷失网站官方网站，作为专业视频品牌平台，汇聚高清原创影像、创作者社区与正版内容生态，深耕内容品质与口碑，为用户提供值得信赖的观看与创作体验。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101518'/%3E%3Cpath d='M24 18l22 14-22 14z' fill='%2300e0a5'/%3E%3C/svg%3E">
+<style>
+:root{
+  --hwm-bg:#0d1114;
+  --hwm-bg2:#131a20;
+  --hwm-panel:#182128;
+  --hwm-line:#26333d;
+  --hwm-text:#e6edf2;
+  --hwm-sub:#9db0bd;
+  --hwm-accent:#00e0a5;
+  --hwm-accent2:#ff5c7a;
+  --hwm-glow:rgba(0,224,165,.18);
+  --hwm-radius:14px;
+  --hwm-sticky:96px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--hwm-bg);
+  color:var(--hwm-text);
+  font-family:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,-apple-system,sans-serif;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0 0 .5em;line-height:1.3}
+h1{font-size:clamp(1.9rem,4vw,3.2rem);letter-spacing:.5px}
+h2{font-size:clamp(1.5rem,2.6vw,2.1rem)}
+h3{font-size:1.12rem}
+p{margin:0 0 1em}
+section{scroll-margin-top:var(--hwm-sticky)}
+.hwm-wrap{width:min(1200px,92vw);margin:0 auto}
+.hwm-btn{
+  display:inline-flex;align-items:center;gap:.5em;
+  padding:.72em 1.5em;border-radius:999px;border:1px solid transparent;
+  font-size:.95rem;font-weight:600;cursor:pointer;transition:.22s ease;
+  background:var(--hwm-accent);color:#04140f;
+}
+.hwm-btn:hover{transform:translateY(-2px);box-shadow:0 10px 26px var(--hwm-glow)}
+.hwm-btn--ghost{background:transparent;color:var(--hwm-text);border-color:var(--hwm-line)}
+.hwm-btn--ghost:hover{border-color:var(--hwm-accent);color:var(--hwm-accent);box-shadow:none}
+.hwm-btn--sm{padding:.42em 1em;font-size:.84rem}
+.hwm-tag{
+  display:inline-block;padding:.18em .7em;border-radius:999px;
+  font-size:.74rem;letter-spacing:.4px;color:var(--hwm-accent);
+  border:1px solid rgba(0,224,165,.35);background:rgba(0,224,165,.08);
+}
+.hwm-tag--pink{color:var(--hwm-accent2);border-color:rgba(255,92,122,.4);background:rgba(255,92,122,.08)}
+
+/* 公告条 + 页头 吸顶 */
+.hwm-topbar{position:sticky;top:0;z-index:90}
+.hwm-notice{
+  background:linear-gradient(90deg,#00e0a5,#0aa7b8 55%,#2e6cf0);
+  color:#03130f;font-size:.85rem;font-weight:600;
+}
+.hwm-notice__inner{
+  display:flex;align-items:center;gap:.7em;
+  padding:.45em 0;overflow:hidden;
+}
+.hwm-notice__label{
+  flex:0 0 auto;background:#03130f;color:#00e0a5;
+  border-radius:4px;padding:.05em .55em;font-size:.74rem;letter-spacing:1px;
+}
+.hwm-notice__track{flex:1 1 auto;overflow:hidden;white-space:nowrap}
+.hwm-notice__track span{display:inline-block;padding-right:3em;animation:hwm-scroll 30s linear infinite}
+@keyframes hwm-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.hwm-notice__close{background:transparent;border:0;color:#03130f;font-size:1rem;cursor:pointer;line-height:1;padding:.2em}
+
+.hwm-header{
+  background:rgba(13,17,20,.94);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--hwm-line);
+}
+.hwm-header__inner{
+  display:flex;align-items:center;gap:1.2rem;
+  padding:.8em 0;
+}
+.hwm-logo{display:flex;align-items:center;gap:.6rem;font-weight:800;font-size:1.05rem;letter-spacing:.6px;flex:0 0 auto}
+.hwm-logo__mark{
+  width:34px;height:34px;border-radius:9px;
+  background:linear-gradient(135deg,#00e0a5,#2e6cf0);
+  display:grid;place-items:center;color:#03130f;font-size:.9rem;
+}
+.hwm-nav{display:flex;gap:1.15rem;font-size:.92rem;color:var(--hwm-sub);flex:1 1 auto;flex-wrap:wrap}
+.hwm-nav a{position:relative;padding:.2em 0;transition:.2s}
+.hwm-nav a:hover{color:var(--hwm-accent)}
+.hwm-header__tools{display:flex;align-items:center;gap:.6rem;flex:0 0 auto}
+.hwm-search{
+  display:flex;align-items:center;gap:.4rem;
+  background:var(--hwm-bg2);border:1px solid var(--hwm-line);
+  border-radius:999px;padding:.32em .4em .32em .9em;
+}
+.hwm-search input{
+  background:transparent;border:0;outline:none;color:var(--hwm-text);
+  font-size:.86rem;width:130px;
+}
+.hwm-search button{
+  background:var(--hwm-accent);border:0;color:#04140f;border-radius:999px;
+  padding:.3em .9em;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+.hwm-burger{display:none;background:transparent;border:1px solid var(--hwm-line);color:var(--hwm-text);border-radius:8px;padding:.35em .6em;font-size:1rem;cursor:pointer}
+.hwm-searchhint{
+  font-size:.82rem;color:var(--hwm-sub);padding:.4em 0 0;min-height:1.4em;
+}
+.hwm-searchhint strong{color:var(--hwm-accent)}
+
+/* 首屏 5:5 */
+.hwm-hero{padding:3.2rem 0 2.6rem;background:radial-gradient(circle at 15% 0%,rgba(0,224,165,.12),transparent 55%),radial-gradient(circle at 85% 20%,rgba(46,108,240,.14),transparent 50%)}
+.hwm-hero__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2.6rem;align-items:center}
+.hwm-hero__eyebrow{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem}
+.hwm-hero h1 span{color:var(--hwm-accent)}
+.hwm-hero__lead{color:var(--hwm-sub);font-size:1.02rem}
+.hwm-hero__intro{font-size:.94rem;color:var(--hwm-sub);border-left:3px solid var(--hwm-accent);padding-left:1rem;margin:1.2rem 0}
+.hwm-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.9rem;margin:1.4rem 0}
+.hwm-stat{background:var(--hwm-panel);border:1px solid var(--hwm-line);border-radius:var(--hwm-radius);padding:.85rem 1rem}
+.hwm-stat b{display:block;font-size:1.35rem;color:var(--hwm-accent);letter-spacing:.5px}
+.hwm-stat span{font-size:.78rem;color:var(--hwm-sub)}
+.hwm-hero__actions{display:flex;gap:.7rem;flex-wrap:wrap}
+.hwm-hero__visual{
+  position:relative;border-radius:20px;overflow:hidden;
+  border:1px solid var(--hwm-line);background:var(--hwm-panel);
+  box-shadow:0 30px 70px rgba(0,0,0,.5);
+}
+.hwm-hero__visual img{width:100%;aspect-ratio:16/11;object-fit:cover}
+.hwm-hero__badge{
+  position:absolute;left:14px;top:14px;background:rgba(3,19,15,.82);
+  color:var(--hwm-accent);border:1px solid rgba(0,224,165,.4);
+  border-radius:999px;font-size:.76rem;padding:.25em .8em;letter-spacing:1px;
+}
+.hwm-hero__play{
+  position:absolute;right:14px;bottom:14px;background:rgba(3,19,15,.85);
+  border:1px solid var(--hwm-line);border-radius:12px;padding:.5em .85em;font-size:.8rem;
+  display:flex;align-items:center;gap:.45em;color:var(--hwm-text);
+}
+
+/* 通用板块 */
+.hwm-section{padding:3rem 0}
+.hwm-section--alt{background:var(--hwm-bg2);border-top:1px solid var(--hwm-line);border-bottom:1px solid var(--hwm-line)}
+.hwm-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:1.2rem;flex-wrap:wrap;margin-bottom:1.8rem}
+.hwm-sec-head p{margin:0;color:var(--hwm-sub);font-size:.92rem;max-width:52ch}
+
+/* 焦点 + 视频流 */
+.hwm-focus{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:1.6rem;margin-bottom:1.8rem}
+.hwm-feature{background:var(--hwm-panel);border:1px solid var(--hwm-line);border-radius:var(--hwm-radius);overflow:hidden;display:flex;flex-direction:column}
+.hwm-feature img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.hwm-feature__body{padding:1.2rem 1.3rem 1.4rem}
+.hwm-feature h3{font-size:1.3rem}
+.hwm-feature p{color:var(--hwm-sub);font-size:.92rem}
+.hwm-meta{display:flex;gap:.8rem;flex-wrap:wrap;font-size:.8rem;color:var(--hwm-sub);margin-bottom:.6rem}
+.hwm-meta b{color:var(--hwm-accent);font-weight:600}
+.hwm-side-list{display:flex;flex-direction:column;gap:.9rem}
+.hwm-side-item{
+  display:grid;grid-template-columns:96px minmax(0,1fr);gap:.9rem;
+  background:var(--hwm-panel);border:1px solid var(--hwm-line);
+  border-radius:var(--hwm-radius);padding:.7rem;transition:.22s;
+}
+.hwm-side-item:hover{border-color:rgba(0,224,165,.5);transform:translateY(-2px)}
+.hwm-side-item img{width:96px;aspect-ratio:16/10;object-fit:cover;border-radius:9px}
+.hwm-side-item h4{margin:0 0 .2em;font-size:.95rem}
+.hwm-side-item p{margin:0;font-size:.8rem;color:var(--hwm-sub)}
+
+.hwm-video-list{display:flex;flex-direction:column;gap:1rem}
+.hwm-video{
+  background:var(--hwm-panel);border:1px solid var(--hwm-line);
+  border-radius:var(--hwm-radius);padding:1.1rem 1.2rem;transition:.22s;
+}
+.hwm-video:hover{border-color:rgba(0,224,165,.45)}
+.hwm-video__head{display:flex;justify-content:space-between;gap:1rem;align-items:flex-start;flex-wrap:wrap}
+.hwm-video h3{font-size:1.05rem;margin-bottom:.25em}
+.hwm-video p{font-size:.88rem;color:var(--hwm-sub);margin:.3em 0 .6em}
+.hwm-video__tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.5rem}
+.hwm-video__stats{display:flex;gap:1rem;flex-wrap:wrap;font-size:.8rem;color:var(--hwm-sub);margin-bottom:.7rem}
+.hwm-video__stats i{font-style:normal;color:var(--hwm-accent)}
+.hwm-video__ops{display:flex;gap:.5rem;flex-wrap:wrap}
+.hwm-act{
+  background:var(--hwm-bg2);border:1px solid var(--hwm-line);color:var(--hwm-sub);
+  border-radius:999px;padding:.3em .95em;font-size:.8rem;cursor:pointer;transition:.2s;
+}
+.hwm-act:hover{color:var(--hwm-accent);border-color:rgba(0,224,165,.5)}
+.hwm-act.is-on{color:var(--hwm-accent);border-color:var(--hwm-accent);background:rgba(0,224,165,.1)}
+.hwm-act.is-fav{color:var(--hwm-accent2);border-color:var(--hwm-accent2);background:rgba(255,92,122,.1)}
+
+/* 关键词解析 */
+.hwm-explore{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2rem}
+.hwm-explore__text h3{margin-top:1.3em;color:var(--hwm-accent)}
+.hwm-explore__text p{color:var(--hwm-sub);font-size:.94rem}
+.hwm-explore__text p:first-of-type{margin-top:0}
+.hwm-aside{display:flex;flex-direction:column;gap:1rem}
+.hwm-cap{background:var(--hwm-panel);border:1px solid var(--hwm-line);border-radius:var(--hwm-radius);overflow:hidden}
+.hwm-cap img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.hwm-cap div{padding:.85rem 1rem}
+.hwm-cap h4{margin:0 0 .15em;font-size:.95rem}
+.hwm-cap p{margin:0;font-size:.8rem;color:var(--hwm-sub)}
+
+/* 专题 */
+.hwm-topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem}
+.hwm-topic{
+  background:var(--hwm-panel);border:1px solid var(--hwm-line);border-radius:var(--hwm-radius);
+  padding:1.2rem;display:flex;flex-direction:column;transition:.22s;
+}
+.hwm-topic:hover{border-color:rgba(0,224,165,.45);transform:translateY(-3px)}
+.hwm-topic__status{font-size:.74rem;color:var(--hwm-accent);margin-bottom:.5em;display:flex;align-items:center;gap:.4em}
+.hwm-topic__status::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--hwm-accent);animation:hwm-pulse 1.8s infinite}
+@keyframes hwm-pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hwm-topic ul{margin:.7em 0 0;padding-left:1.1em;color:var(--hwm-sub);font-size:.86rem}
+.hwm-topic li{margin-bottom:.35em}
+
+/* 作者 双列简介 */
+.hwm-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem}
+.hwm-author{
+  display:grid;grid-template-columns:56px minmax(0,1fr);gap:1rem;
+  background:var(--hwm-panel);border:1px solid var(--hwm-line);
+  border-radius:var(--hwm-radius);padding:1.1rem;transition:.22s;
+}
+.hwm-author:hover{border-color:rgba(0,224,165,.45)}
+.hwm-avatar{
+  width:56px;height:56px;border-radius:50%;display:grid;place-items:center;
+  font-weight:800;font-size:1.15rem;color:#04140f;
+}
+.hwm-author h3{margin:0 0 .15em;font-size:1rem}
+.hwm-author__field{font-size:.8rem;color:var(--hwm-accent);margin-bottom:.35em}
+.hwm-author__num{font-size:.78rem;color:var(--hwm-sub);display:flex;gap:.9em;margin-bottom:.45em}
+.hwm-author p{font-size:.83rem;color:var(--hwm-sub);margin:0}
+.hwm-author__link{
+  display:inline-block;margin-top:.6em;font-size:.8rem;color:var(--hwm-accent);
+  background:transparent;border:0;padding:0;cursor:pointer;font-family:inherit;
+}
+.hwm-author__link:hover{text-decoration:underline}
+
+/* 评论 评分摘要 + 引用 */
+.hwm-score{
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:1.6rem;
+  background:var(--hwm-panel);border:1px solid var(--hwm-line);
+  border-radius:var(--hwm-radius);padding:1.4rem;margin-bottom:1.4rem;align-items:center;
+}
+.hwm-score__big{text-align:center}
+.hwm-score__big b{display:block;font-size:2.8rem;color:var(--hwm-accent);line-height:1}
+.hwm-score__big span{font-size:.8rem;color:var(--hwm-sub)}
+.hwm-score__bars{display:flex;flex-direction:column;gap:.45rem}
+.hwm-bar{display:grid;grid-template-columns:44px minmax(0,1fr) 40px;gap:.6rem;align-items:center;font-size:.78rem;color:var(--hwm-sub)}
+.hwm-bar i{display:block;height:7px;border-radius:99px;background:var(--hwm-bg2);overflow:hidden}
+.hwm-bar i em{display:block;height:100%;background:linear-gradient(90deg,#00e0a5,#2e6cf0);border-radius:99px}
+.hwm-quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.hwm-quote{
+  background:var(--hwm-bg2);border-left:3px solid var(--hwm-accent);
+  border-radius:0 12px 12px 0;padding:1rem 1.1rem;
+}
+.hwm-quote p{font-size:.88rem;margin:0 0 .5em;color:var(--hwm-text)}
+.hwm-quote footer{font-size:.78rem;color:var(--hwm-sub)}
+.hwm-quote--alt{border-left-color:var(--hwm-accent2)}
+
+/* 数据榜单 */
+.hwm-rank{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem}
+.hwm-rank__col{background:var(--hwm-panel);border:1px solid var(--hwm-line);border-radius:var(--hwm-radius);padding:1.1rem}
+.hwm-rank__col h3{font-size:.98rem;color:var(--hwm-accent);display:flex;align-items:center;gap:.4em}
+.hwm-rank__col ol{margin:0;padding-left:1.2em;font-size:.86rem;color:var(--hwm-sub)}
+.hwm-rank__col li{margin-bottom:.55em}
+.hwm-rank__col li b{color:var(--hwm-text)}
+
+/* 新闻 / FAQ / 合作 */
+.hwm-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.6rem}
+.hwm-news{list-style:none;margin:0;padding:0}
+.hwm-news li{
+  display:grid;grid-template-columns:88px minmax(0,1fr);gap:1rem;
+  padding:.85rem 0;border-bottom:1px dashed var(--hwm-line);font-size:.9rem;
+}
+.hwm-news li:last-child{border-bottom:0}
+.hwm-news time{color:var(--hwm-accent);font-size:.8rem}
+.hwm-news p{margin:.15em 0 0;color:var(--hwm-sub);font-size:.82rem}
+.hwm-faq{display:flex;flex-direction:column;gap:.6rem}
+.hwm-faq details{
+  background:var(--hwm-panel);border:1px solid var(--hwm-line);
+  border-radius:11px;padding:.85rem 1rem;
+}
+.hwm-faq summary{
+  cursor:pointer;font-size:.92rem;font-weight:600;list-style:none;
+  display:flex;justify-content:space-between;gap:1rem;align-items:center;
+}
+.hwm-faq summary::-webkit-details-marker{display:none}
+.hwm-faq summary::after{content:"+";color:var(--hwm-accent);font-size:1.2rem;line-height:1}
+.hwm-faq details[open] summary::after{content:"−"}
+.hwm-faq p{margin:.70em 0 0;font-size:.85rem;color:var(--hwm-sub)}
+.hwm-partners{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.9rem}
+.hwm-partner{
+  background:var(--hwm-bg2);border:1px solid var(--hwm-line);border-radius:11px;
+  padding:1rem .8rem;text-align:center;font-size:.85rem;color:var(--hwm-sub);
+  transition:.2s;
+}
+.hwm-partner:hover{color:var(--hwm-accent);border-color:rgba(0,224,165,.45)}
+.hwm-partner b{display:block;color:var(--hwm-text);font-size:.95rem;margin-bottom:.15em}
+
+/* 投稿 */
+.hwm-cta{
+  background:linear-gradient(120deg,rgba(0,224,165,.14),rgba(46,108,240,.16));
+  border:1px solid var(--hwm-line);border-radius:20px;padding:2.2rem;
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1.6rem;align-items:center;
+}
+.hwm-cta h2{margin-bottom:.4em}
+.hwm-cta p{color:var(--hwm-sub);margin:0;font-size:.92rem}
+.hwm-cta__btns{display:flex;gap:.7rem;flex-wrap:wrap}
+
+/* 页脚 */
+.hwm-footer{background:#080b0d;border-top:1px solid var(--hwm-line);padding:2.6rem 0 1.4rem}
+.hwm-footer__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:1.8rem;margin-bottom:1.8rem}
+.hwm-footer h4{font-size:.9rem;color:var(--hwm-accent);margin-bottom:.7em}
+.hwm-footer ul{list-style:none;margin:0;padding:0;font-size:.85rem;color:var(--hwm-sub)}
+.hwm-footer li{margin-bottom:.45em}
+.hwm-footer a:hover{color:var(--hwm-accent)}
+.hwm-footer__about p{font-size:.85rem;color:var(--hwm-sub);max-width:34ch}
+.hwm-footer__bottom{
+  border-top:1px solid var(--hwm-line);padding-top:1.1rem;
+  font-size:.78rem;color:var(--hwm-sub);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+}
+
+/* 浮动按钮 & Toast & 弹窗 */
+.hwm-top{
+  position:fixed;right:20px;bottom:24px;z-index:80;
+  width:44px;height:44px;border-radius:50%;border:1px solid var(--hwm-line);
+  background:var(--hwm-panel);color:var(--hwm-accent);cursor:pointer;
+  font-size:1rem;display:none;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.5);
+}
+.hwm-top.is-show{display:grid}
+.hwm-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:#03130f;color:var(--hwm-accent);border:1px solid rgba(0,224,165,.45);
+  padding:.65em 1.3em;border-radius:999px;font-size:.85rem;
+  opacity:0;pointer-events:none;transition:.28s;z-index:120;white-space:nowrap;
+}
+.hwm-toast.is-show{opacity:1;transform:translate(-50%,0)}
+.hwm-modal{
+  position:fixed;inset:0;z-index:110;display:none;place-items:center;
+  background:rgba(4,7,9,.78);padding:1.4rem;
+}
+.hwm-modal.is-open{display:grid}
+.hwm-modal__box{
+  width:min(560px,100%);max-height:84vh;overflow:auto;
+  background:var(--hwm-panel);border:1px solid var(--hwm-line);
+  border-radius:16px;padding:1.5rem;
+}
+.hwm-modal__box h3{margin-top:0}
+.hwm-modal__box p,.hwm-modal__box li{font-size:.88rem;color:var(--hwm-sub)}
+.hwm-modal__close{
+  float:right;background:transparent;border:1px solid var(--hwm-line);
+  color:var(--hwm-sub);border-radius:8px;cursor:pointer;padding:.15em .6em;
+}
+
+@media (max-width:980px){
+  .hwm-hero__grid,.hwm-explore,.hwm-focus,.hwm-cta,.hwm-score{grid-template-columns:minmax(0,1fr)}
+  .hwm-topics,.hwm-rank{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hwm-footer__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hwm-partners{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:760px){
+  :root{--hwm-sticky:88px}
+  .hwm-nav{display:none;width:100%;flex-direction:column;gap:.2rem;padding:.6rem 0 .2rem;border-top:1px solid var(--hwm-line);margin-top:.6rem}
+  .hwm-nav.is-open{display:flex}
+  .hwm-burger{display:inline-block}
+  .hwm-header__inner{flex-wrap:wrap}
+  .hwm-search input{width:92px}
+  .hwm-authors,.hwm-quotes,.hwm-grid-2{grid-template-columns:minmax(0,1fr)}
+  .hwm-topics,.hwm-rank{grid-template-columns:minmax(0,1fr)}
+  .hwm-side-item{grid-template-columns:80px minmax(0,1fr)}
+  .hwm-side-item img{width:80px}
+  .hwm-stats{grid-template-columns:minmax(0,1fr)}
+  .hwm-news li{grid-template-columns:minmax(0,1fr)}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 + 页头 -->
+<div class="hwm-topbar">
+  <div class="hwm-notice" id="hwmNotice">
+    <div class="hwm-wrap hwm-notice__inner">
+      <span class="hwm-notice__label">官方发布</span>
+      <div class="hwm-notice__track">
+        <span>「迷失之后」第二季 4K 正版上线，新增 6 集城市夜行影像 · 创作者扶持计划第 7 期报名开启，最高 5 万元制作基金 · 2026 年度口碑榜投票通道开放，参与即得限定徽章 · 官网新版专题页支持高清下载与离线收藏 · 「虎威放映室」线下观影会 12 月 6 日开放报名 · </span>
+        <span aria-hidden="true">「迷失之后」第二季 4K 正版上线，新增 6 集城市夜行影像 · 创作者扶持计划第 7 期报名开启，最高 5 万元制作基金 · 2026 年度口碑榜投票通道开放，参与即得限定徽章 · 官网新版专题页支持高清下载与离线收藏 · 「虎威放映室」线下观影会 12 月 6 日开放报名 · </span>
+      </div>
+      <button class="hwm-notice__close" id="hwmNoticeClose" aria-label="关闭公告">×</button>
+    </div>
+  </div>
+
+  <header class="hwm-header">
+    <div class="hwm-wrap hwm-header__inner">
+      <a class="hwm-logo" href="#hwmTop">
+        <span class="hwm-logo__mark">虎</span>
+        <span>av虎威迷失网站</span>
+      </a>
+      <button class="hwm-burger" id="hwmBurger" aria-label="展开导航" aria-expanded="false">☰</button>
+      <nav class="hwm-nav" id="hwmNav" aria-label="主导航">
+        <a href="#hwmFocus">焦点内容</a>
+        <a href="#hwmExplore">关键词解析</a>
+        <a href="#hwmTopics">专题企划</a>
+        <a href="#hwmAuthors">创作者</a>
+        <a href="#hwmCommunity">社区口碑</a>
+        <a href="#hwmRank">数据榜单</a>
+        <a href="#hwmNews">企业动态</a>
+        <a href="#hwmFaq">帮助中心</a>
+      </nav>
+      <div class="hwm-header__tools">
+        <form class="hwm-search" id="hwmSearchForm" role="search">
+          <input type="search" id="hwmSearchInput" placeholder="搜索影像 / 创作者" aria-label="站内搜索">
+          <button type="submit">搜索</button>
+        </form>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="hwmTop">
+
+  <!-- S2 品牌首屏 -->
+  <section class="hwm-hero" aria-label="品牌首屏">
+    <div class="hwm-wrap hwm-hero__grid">
+      <div>
+        <div class="hwm-hero__eyebrow">
+          <span class="hwm-tag">官方网站</span>
+          <span class="hwm-tag hwm-tag--pink">品牌企业门户</span>
+          <span class="hwm-tag">高清正版</span>
+        </div>
+        <h1>av虎威迷失网站<span>·让迷失成为观看的入口</span></h1>
+        <p class="hwm-hero__lead">专业影像视频品牌平台 · 原创内容生态 · 创作者社区</p>
+        <p class="hwm-hero__intro">
+          作为深耕城市夜行与在地探索的影像品牌，av虎威迷失网站官方网站以高清原创内容为核心，
+          聚合纪录片、短片、访谈与现场影像，为创作者与用户搭建值得信赖的内容生态，
+          以匠心记录真实，以陪伴见证成长。
+        </p>
+        <div class="hwm-stats">
+          <div class="hwm-stat"><b data-count="12800">12,800+</b><span>高清原创影像</span></div>
+          <div class="hwm-stat"><b data-count="462">462</b><span>签约创作者</span></div>
+          <div class="hwm-stat"><b data-count="31">31</b><span>覆盖城市站点</span></div>
+        </div>
+        <div class="hwm-hero__actions">
+          <a class="hwm-btn" href="#hwmFocus">进入焦点内容</a>
+          <button class="hwm-btn hwm-btn--ghost" data-hwm-modal="submit">投稿 / 报名</button>
+          <a class="hwm-btn hwm-btn--ghost" href="#hwmAuthors">认识创作者</a>
+        </div>
+        <p class="hwm-searchhint" id="hwmSearchHint">提示：可搜索「夜行」「手作」「访谈」等关键词</p>
+      </div>
+      <div class="hwm-hero__visual">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%230a1a24'/%3E%3Cstop offset='.55' stop-color='%23142c3a'/%3E%3Cstop offset='1' stop-color='%230d1216'/%3E%3C/linearGradient%3E%3ClinearGradient id='neon' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2300e0a5'/%3E%3Cstop offset='1' stop-color='%232e6cf0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23sky)'/%3E%3Ccircle cx='640' cy='110' r='58' fill='%2300e0a5' opacity='.18'/%3E%3Ccircle cx='640' cy='110' r='28' fill='%23d8fff3' opacity='.85'/%3E%3Cg opacity='.55'%3E%3Cpath d='M0 430 L120 330 L230 380 L330 300 L440 370 L560 290 L700 360 L800 320 L800 550 L0 550 Z' fill='%230b141a'/%3E%3C/g%3E%3Cg%3E%3Crect x='70' y='250' width='70' height='300' fill='%2313202a'/%3E%3Crect x='155' y='200' width='52' height='350' fill='%23101c25'/%3E%3Crect x='222' y='300' width='84' height='250' fill='%23152430'/%3E%3Crect x='330' y='170' width='60' height='380' fill='%23101d27'/%3E%3Crect x='405' y='260' width='96' height='290' fill='%2313212c'/%3E%3Crect x='520' y='215' width='64' height='335' fill='%230f1b24'/%3E%3Crect x='600' y='300' width='110' height='250' fill='%23142130'/%3E%3C/g%3E%3Cg fill='%2300e0a5' opacity='.9'%3E%3Crect x='86' y='272' width='12' height='12'/%3E%3Crect x='112' y='292' width='12' height='12'/%3E%3Crect x='86' y='330' width='12' height='12'/%3E%3Crect x='352' y='200' width='10' height='10'/%3E%3Crect x='420' y='300' width='14' height='14'/%3E%3Crect x='452' y='340' width='14' height='14'/%3E%3Crect x='540' y='250' width='12' height='12'/%3E%3Crect x='628' y='330' width='14' height='14'/%3E%3C/g%3E%3Cg fill='%232e6cf0' opacity='.85'%3E%3Crect x='140' y='228' width='10' height='10'/%3E%3Crect x='236' y='320' width='14' height='14'/%3E%3Crect x='268' y='380' width='14' height='14'/%3E%3Crect x='378' y='230' width='10' height='10'/%3E%3Crect x='640' y='360' width='14' height='14'/%3E%3C/g%3E%3Cpath d='M0 470 Q200 430 400 468 T800 452 L800 550 L0 550 Z' fill='%23081216' opacity='.9'/%3E%3Cg stroke='url(%23neon)' stroke-width='3' fill='none' opacity='.9'%3E%3Cpath d='M110 470 q60 -40 120 0 t120 0 t120 0 t120 0'/%3E%3C/g%3E%3Cg fill='%23e6edf2' opacity='.75'%3E%3Crect x='356' y='470' width='18' height='26' rx='3'/%3E%3Crect x='424' y='470' width='14' height='26' rx='3'/%3E%3C/g%3E%3C/svg%3E" alt="av虎威迷失网站首屏城市夜景主视觉：霓虹楼群与夜行者剪影" width="800" height="550" loading="eager">
+        <span class="hwm-hero__badge">原创 · 4K 高清</span>
+        <span class="hwm-hero__play">▶ 品牌形象片 02:46</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 焦点内容 + 视频流 -->
+  <section class="hwm-section" id="hwmFocus" aria-label="焦点内容">
+    <div class="hwm-wrap">
+      <div class="hwm-sec-head">
+        <div>
+          <h2>焦点内容 · 本周官方推荐影像</h2>
+          <p>由内容编辑部与创作者社区共同推选，聚焦城市夜行、在地文化与创作幕后，全部为高清正版首发。</p>
+        </div>
+        <span class="hwm-tag">更新于 2026-11-22</span>
+      </div>
+
+      <div class="hwm-focus">
+        <article class="hwm-feature">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23131e26'/%3E%3Cstop offset='1' stop-color='%2322464a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f1)'/%3E%3Cg opacity='.9'%3E%3Crect x='90' y='80' width='620' height='270' rx='10' fill='%230a1216' stroke='%2300e0a5' stroke-width='2'/%3E%3Crect x='118' y='108' width='240' height='214' fill='%23183a3c'/%3E%3Ccircle cx='238' cy='188' r='38' fill='%2300e0a5' opacity='.65'/%3E%3Crect x='142' y='240' width='190' height='10' fill='%2300e0a5' opacity='.35'/%3E%3Crect x='142' y='262' width='140' height='10' fill='%2300e0a5' opacity='.25'/%3E%3Crect x='142' y='284' width='168' height='10' fill='%2300e0a5' opacity='.2'/%3E%3Cg%3E%3Crect x='386' y='116' width='286' height='54' rx='6' fill='%232e6cf0' opacity='.28'/%3E%3Crect x='386' y='186' width='286' height='12' fill='%23e6edf2' opacity='.35'/%3E%3Crect x='386' y='210' width='220' height='12' fill='%23e6edf2' opacity='.22'/%3E%3Crect x='386' y='248' width='286' height='64' rx='6' fill='%2300e0a5' opacity='.14'/%3E%3C/g%3E%3C/g%3E%3Cpath d='M600 300 l0 -46 l38 23 z' fill='%2300e0a5' opacity='.85'/%3E%3C/svg%3E" alt="焦点影像《迷失之后：城市夜行者的十二小时》封面帧" width="800" height="450" loading="lazy">
+          <div class="hwm-feature__body">
+            <div class="hwm-meta"><span>纪录片 · 城市探索</span><span>4K 高清</span><span>12.6 万次播放</span></div>
+            <h3>迷失之后：城市夜行者的十二小时</h3>
+            <p>从末班地铁到凌晨四点的便利店，摄制组跟随三位普通夜归者走过同一座城市的不同切面。全片以自然光与手持镜头完成，保留大量环境声与呼吸声，被社区称为「最贴近真实的夜行影像」。导演在映后访谈中提到，拍摄初衷是让每一个路过的人都值得被认真记录。</p>
+            <div class="hwm-video__ops">
+              <button class="hwm-act" data-hwm-like="1">♡ 点赞 <span>2.4k</span></button>
+              <button class="hwm-act" data-hwm-fav="1">☆ 收藏</button>
+              <button class="hwm-act" data-hwm-modal="comment">评论</button>
+              <button class="hwm-act" data-hwm-copy="迷失之后：城市夜行者的十二小时">复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="hwm-side-list">
+          <article class="hwm-side-item">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23241726'/%3E%3Ccircle cx='250' cy='52' r='30' fill='%23ff5c7a' opacity='.55'/%3E%3Cpath d='M0 150 Q80 110 160 148 T320 140 L320 200 L0 200 Z' fill='%23120b12'/%3E%3Crect x='40' y='60' width='90' height='110' fill='%23332030'/%3E%3Crect x='52' y='74' width='26' height='26' fill='%23ff5c7a' opacity='.8'/%3E%3Crect x='92' y='74' width='26' height='26' fill='%23ff5c7a' opacity='.5'/%3E%3Crect x='52' y='112' width='26' height='26' fill='%23ff5c7a' opacity='.6'/%3E%3C/svg%3E" alt="短片《凌晨四点的便利店》店招灯光细节" width="320" height="200" loading="lazy">
+            <div>
+              <h4>凌晨四点的便利店</h4>
+              <p>短片 · 8 分钟 · 治愈影像</p>
+            </div>
+          </article>
+          <article class="hwm-side-item">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23101e17'/%3E%3Cg stroke='%2300e0a5' stroke-width='2' fill='none' opacity='.7'%3E%3Cpath d='M30 160 L30 60 L90 40 L150 60 L150 160'/%3E%3Cpath d='M60 160 L60 90 L120 72 L120 160'/%3E%3C/g%3E%3Ccircle cx='240' cy='70' r='34' fill='none' stroke='%2300e0a5' stroke-width='2' opacity='.6'/%3E%3Ccircle cx='240' cy='70' r='12' fill='%2300e0a5' opacity='.5'/%3E%3Crect x='200' y='130' width='90' height='8' fill='%2300e0a5' opacity='.3'/%3E%3Crect x='200' y='148' width='60' height='8' fill='%2300e0a5' opacity='.2'/%3E%3C/svg%3E" alt="访谈《导演手记：如何在街头拍到真实》取景构图示意" width="320" height="200" loading="lazy">
+            <div>
+              <h4>导演手记：如何在街头拍到真实</h4>
+              <p>人物访谈 · 22 分钟 · 创作幕后</p>
+            </div>
+          </article>
+          <article class="hwm-side-item">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%230d1b28'/%3E%3Cg fill='%232e6cf0' opacity='.8'%3E%3Crect x='36' y='120' width='24' height='60'/%3E%3Crect x='72' y='96' width='24' height='84'/%3E%3Crect x='108' y='132' width='24' height='48'/%3E%3Crect x='144' y='80' width='24' height='100'/%3E%3C/g%3E%3Cpath d='M30 176 L160 176 L200 120 L290 120' stroke='%2300e0a5' stroke-width='3' fill='none'/%3E%3Ccircle cx='200' cy='120' r='7' fill='%2300e0a5'/%3E%3C/svg%3E" alt="数据纪录短片《十二座城市的夜班表》航线图画面" width="320" height="200" loading="lazy">
+            <div>
+              <h4>十二座城市的夜班表</h4>
+              <p>纪录短片 · 15 分钟 · 行业观察</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <h3 style="margin-bottom:.9rem">热门视频流 · 社区正在观看</h3>
+      <div class="hwm-video-list">
+        <article class="hwm-video">
+          <div class="hwm-video__head">
+            <div>
+              <h3>夜行攻略：把一条陌生街区拍出故事感</h3>
+              <p>从选点、测光到运镜节奏，拆解五个可以立刻用上的街头拍摄技巧，附完整拍摄清单与参数记录。</p>
+            </div>
+            <span class="hwm-tag">实用技巧</span>
+          </div>
+          <div class="hwm-video__tags"><span class="hwm-tag">教程</span><span class="hwm-tag">夜拍</span><span class="hwm-tag">新手友好</span></div>
+          <div class="hwm-video__stats"><span>作者：<i>拾光不拾荒</i></span><span>播放 <i>8.7万</i></span><span>点赞 <i>6321</i></span><span>收藏 <i>2740</i></span></div>
+          <div class="hwm-video__ops">
+            <button class="hwm-act" data-hwm-like="2">♡ 点赞 <span>6321</span></button>
+            <button class="hwm-act" data-hwm-fav="2">☆ 收藏</button>
+            <button class="hwm-act" data-hwm-modal="comment">评论</button>
+            <button class="hwm-act" data-hwm-modal="report">反馈</button>
+          </div>
+        </article>
+
+        <article class="hwm-video">
+          <div class="hwm-video__head">
+            <div>
+              <h3>迷失地图：三条被遗忘的城市支路</h3>
+              <p>不是网红打卡点，而是本地人绕路时才会经过的三条小巷。作者蹲点两周，记录下路灯下的小生意与街坊寒暄。</p>
+            </div>
+            <span class="hwm-tag">城市探索</span>
+          </div>
+          <div class="hwm-video__tags"><span class="hwm-tag">在地文化</span><span class="hwm-tag">纪录</span></div>
+          <div class="hwm-video__stats"><span>作者：<i>巷口阿越</i></span><span>播放 <i>6.2万</i></span><span>点赞 <i>4188</i></span><span>收藏 <i>1902</i></span></div>
+          <div class="hwm-video__ops">
+            <button class="hwm-act" data-hwm-like="3">♡ 点赞 <span>4188</span></button>
+            <button class="hwm-act" data-hwm-fav="3">☆ 收藏</button>
+            <button class="hwm-act" data-hwm-modal="comment">评论</button>
+            <button class="hwm-act" data-hwm-copy="迷失地图：三条被遗忘的城市支路">复制链接</button>
+          </div>
+        </article>
+
+        <article class="hwm-video">
+          <div class="hwm-video__head">
+            <div>
+              <h3>从脚本到成片：一支 5 分钟短片的完整流程</h3>
+              <p>完整展示选题会、分镜表、勘景与后期调色的每一步，附带可下载的选题模板与时间规划表。</p>
+            </div>
+            <span class="hwm-tag">创作幕后</span>
+          </div>
+          <div class="hwm-video__tags"><span class="hwm-tag">干货</span><span class="hwm-tag">流程拆解</span><span class="hwm-tag">可下载</span></div>
+          <div class="hwm-video__stats"><span>作者：<i>三分剪辑室</i></span><span>播放 <i>5.4万</i></span><span>点赞 <i>3765</i></span><span>收藏 <i>3310</i></span></div>
+          <div class="hwm-video__ops">
+            <button class="hwm-act" data-hwm-like="4">♡ 点赞 <span>3765</span></button>
+            <button class="hwm-act" data-hwm-fav="4">☆ 收藏</button>
+            <button class="hwm-act" data-hwm-modal="comment">评论</button>
+            <button class="hwm-act" data-hwm-download="1">下载素材包</button>
+          </div>
+        </article>
+
+        <article class="hwm-video">
+          <div class="hwm-video__head">
+            <div>
+              <h3>深夜访谈：我们为什么愿意在夜里出门</h3>
+              <p>邀请四位长期夜间拍摄的创作者对谈，聊设备焦虑、安全边界与被误解的「迷失感」。</p>
+            </div>
+            <span class="hwm-tag">人物访谈</span>
+          </div>
+          <div class="hwm-video__tags"><span class="hwm-tag">对谈</span><span class="hwm-tag">创作者</span></div>
+          <div class="hwm-video__stats"><span>作者：<i>夜航访谈组</i></span><span>播放 <i>4.1万</i></span><span>点赞 <i>2987</i></span><span>收藏 <i>1206</i></span></div>
+          <div class="hwm-video__ops">
+            <button class="hwm-act" data-hwm-like="5">♡ 点赞 <span>2987</span></button>
+            <button class="hwm-act" data-hwm-fav="5">☆ 收藏</button>
+            <button class="hwm-act" data-hwm-modal="comment">评论</button>
+            <button class="hwm-act" data-hwm-modal="report">反馈</button>
+          </div>
+        </article>
+
+        <article class="hwm-video">
+          <div class="hwm-video__head">
+            <div>
+              <h3>城市声音采集记：把蝉鸣与刹车声做成配乐</h3>
+              <p>声音设计师带着一支录音笔走过六个街区，演示如何用环境声构建短片的情绪层次。</p>
+            </div>
+            <span class="hwm-tag">知识科普</span>
+          </div>
+          <div class="hwm-video__tags"><span class="hwm-tag">声音设计</span><span class="hwm-tag">配乐</span></div>
+          <div class="hwm-video__stats"><span>作者：<i>声场小满</i></span><span>播放 <i>3.3万</i></span><span>点赞 <i>2145</i></span><span>收藏 <i>1680</i></span></div>
+          <div class="hwm-video__ops">
+            <button class="hwm-act" data-hwm-like="6">♡ 点赞 <span>2145</span></button>
+            <button class="hwm-act" data-hwm-fav="6">☆ 收藏</button>
+            <button class="hwm-act" data-hwm-modal="comment">评论</button>
+            <button class="hwm-act" data-hwm-copy="城市声音采集记">复制链接</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词解析 -->
+  <section class="hwm-section hwm-section--alt" id="hwmExplore" aria-label="关键词解析">
+    <div class="hwm-wrap">
+      <div class="hwm-sec-head">
+        <div>
+          <h2>关键词解析 · av虎威迷失网站的影像主张</h2>
+          <p>为什么一个视频品牌要用「迷失」作为方法？这里完整说明品牌的定位、内容准则与企业表达。</p>
+        </div>
+      </div>
+      <div class="hwm-explore">
+        <div class="hwm-explore__text">
+          <h3>一、从「迷失」出发：品牌的定位与命名逻辑</h3>
+          <p>在大多数影像平台强调「精准推荐」的时候，av虎威迷失网站官方网站选择把「迷失」放在品牌名的核心位置。这里的迷失不是走错路，而是一种主动的观看姿态：愿意在陌生的街巷里多走十分钟，愿意让一个没有台词的长镜头停留到呼吸变慢，愿意接受自己被画面带走。作为一家持续运营的视频品牌企业，我们把这个姿态转成内容准则，落到每一次选题会、每一次勘景和每一次成片审看里。平台上的影像必须回答一个问题：它有没有让人重新看见一个原本被忽略的角落。</p>
+          <p>因此，官网首页的焦点内容并不以流量大小为唯一排序依据。编辑团队会同时看三个维度：影像完成度、现场真实度与社区讨论度。完成度决定它能否进入焦点区，真实度决定它能否被推荐给新用户，讨论度决定它是否值得被做成专题。这个三层结构让品牌在保持品质的同时，也保留了社区的活力，让新创作者有机会被看见——只要作品能在现场站得住。</p>
+          <h3>二、影像准则：高清、原创与现场感的三重底线</h3>
+          <p>高清是技术底线。官网所有上架内容统一要求 1080P 起，重点专题必须提供 4K 正版源文件，并提供多码率自适应播放。我们为创作者提供统一的色彩管理与字幕规范，避免同一支短片在不同设备上出现明显的偏色与压暗。正版是法律底线，平台对音乐、字体、素材均采用可追溯授权，创作者上传时需提交素材清单，审核通过后才会获得官方发布标识。</p>
+          <p>现场感是内容底线。我们不鼓励摆拍式的「城市感」：霓虹、雨夜、慢门车流这些元素可以用，但必须由真实场景支撑。审片标准里有一条被团队称为「三十秒原则」：如果开头三十秒删掉所有音乐和字幕，画面本身仍然能让人愿意看下去，这支片子才具备进入焦点区的基础。这条原则来自早期一次内部放映会的教训——当时一支制作精良但缺乏现场细节的短片，在观众席里几乎没有留下任何讨论。</p>
+          <h3>三、内容生态：创作者、企业与社区的三角结构</h3>
+          <p>av虎威迷失网站的企业定位不是单一的内容仓库，而是一个持续生长的内容生态。创作者提供影像与故事，企业提供制作资源、审核规范与分发能力，社区提供反馈与二次讨论，三者构成稳定的三角。平台每年设置创作者扶持计划，提供制作基金、设备借用与剪辑工位，并安排资深导演进行一对一辅导。签约创作者的作品数、粉丝数与口碑数据全部在作者档案中公开，用户可以清楚看到一位创作者在平台上的成长轨迹。</p>
+          <p>对企业客户，官网提供品牌定制影像、城市宣传片与线下放映合作三类服务。我们坚持所有商业合作内容都带明确标识，不与应用内原创推荐混排，保证用户对内容来源有清晰判断。对社区用户，平台保持每周一次的公开选题投票，投票结果直接影响下一季专题的方向。这种「可参与」的机制让品牌不只是被观看，也被共同塑造——这也是我们理解的用户至上：把决定权的一部分交回给真正每天在看的那些人。</p>
+          <h3>四、品牌故事与长期主义：慢一点，但走得更远</h3>
+          <p>品牌创立初期只有四个人和两台二手相机，最早的一批影像是在城市边缘的旧工业区完成的。那批素材画质并不完美，却因为真实记录了一个即将拆迁的街区的最后一年，成为官网至今仍被反复点播的经典内容。这段经历影响了品牌其后所有决策：我们愿意为一部纪录片等待一年，也愿意为一个没有粉丝基础的新人保留推荐位。深耕垂直领域并不意味着拒绝扩张，而是每扩张一步都先把内容标准立稳。</p>
+          <p>如今的 av虎威迷失网站 已覆盖三十一座城市站点，形成纪录片、短片、访谈、现场与教程五条内容线，并与多所高校的影视专业建立实习合作，承担相应的社会责任。我们希望这个品牌在十年后回头看时，留下的不只是数据曲线，而是一批可以被反复观看、能够陪伴观众成长的影像档案。真实、温暖、有力量——这三个词被写在编辑部墙上，也写在每一次更新日志的第一行。</p>
+        </div>
+        <aside class="hwm-aside">
+          <div class="hwm-cap">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%2313222c'/%3E%3Cg stroke='%2300e0a5' stroke-width='2' fill='none' opacity='.8'%3E%3Cpath d='M40 250 L40 90 L140 40 L240 90 L240 250'/%3E%3Cpath d='M80 250 L80 120 L180 82 L180 250'/%3E%3C/g%3E%3Cg fill='%2300e0a5' opacity='.35'%3E%3Crect x='110' y='150' width='16' height='16'/%3E%3Crect x='110' y='190' width='16' height='16'/%3E%3Crect x='146' y='150' width='16' height='16'/%3E%3Crect x='146' y='190' width='16' height='16'/%3E%3C/g%3E%3Ccircle cx='350' cy='110' r='46' fill='none' stroke='%232e6cf0' stroke-width='2' opacity='.7'/%3E%3Crect x='300' y='180' width='130' height='10' fill='%232e6cf0' opacity='.4'/%3E%3Crect x='300' y='204' width='90' height='10' fill='%232e6cf0' opacity='.25'/%3E%3C/svg%3E" alt="av虎威迷失网站内容准则示意：三层审核结构与影像档案架" width="480" height="300" loading="lazy">
+            <div>
+              <h4>三层审核结构</h4>
+              <p>完成度 · 真实度 · 讨论度，共同决定一支影像能否进入官网焦点区。</p>
+            </div>
+          </div>
+          <div class="hwm-cap">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%23201826'/%3E%3Cg fill='%23ff5c7a' opacity='.5'%3E%3Ccircle cx='120' cy='90' r='26'/%3E%3Ccircle cx='200' cy='140' r='18'/%3E%3Ccircle cx='160' cy='210' r='22'/%3E%3Ccircle cx='300' cy='100' r='30'/%3E%3Ccircle cx='360' cy='190' r='16'/%3E%3C/g%3E%3Cpath d='M110 250 Q200 190 300 240 T470 220' stroke='%23ff5c7a' stroke-width='2' fill='none' opacity='.7'/%3E%3Crect x='60' y='250' width='360' height='6' fill='%23ff5c7a' opacity='.3'/%3E%3C/svg%3E" alt="社区共创机制示意：创作者扶持与公开选题投票" width="480" height="300" loading="lazy">
+            <div>
+              <h4>社区共创机制</h4>
+              <p>每周公开选题投票，创作者扶持计划每年两期，资源向新人倾斜。</p>
+            </div>
+          </div>
+          <div class="hwm-cap">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%23101d1a'/%3E%3Cg%3E%3Crect x='60' y='60' width='360' height='180' rx='8' fill='%230a1412' stroke='%2300e0a5' stroke-width='2'/%3E%3Cpath d='M210 120 l70 30 -70 30 z' fill='%2300e0a5' opacity='.8'/%3E%3Crect x='60' y='250' width='200' height='8' fill='%2300e0a5' opacity='.4'/%3E%3Crect x='270' y='250' width='90' height='8' fill='%2300e0a5' opacity='.22'/%3E%3C/g%3E%3C/svg%3E" alt="4K 正版播放与多码率自适应播放示意图" width="480" height="300" loading="lazy">
+            <div>
+              <h4>4K 正版播放</h4>
+              <p>重点专题提供 4K 源文件与多码率自适应，支持高清下载与离线收藏。</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="hwm-section" id="hwmTopics" aria-label="专题企划">
+    <div class="hwm-wrap">
+      <div class="hwm-sec-head">
+        <div>
+          <h2>专题企划 · 正在更新的三条内容线</h2>
+          <p>专题是官网内容生态的核心单元，每个专题由一位主理人负责，按周更新，接受社区投票与反馈。</p>
+        </div>
+      </div>
+      <div class="hwm-topics">
+        <article class="hwm-topic">
+          <span class="hwm-topic__status">更新中 · 第 2 季</span>
+          <h3>迷失之后</h3>
+          <p style="font-size:.88rem;color:var(--hwm-sub);margin:0">以城市夜行者为对象的纪录影像系列，目前已覆盖十二座城市，聚焦普通人的夜班生活。</p>
+          <ul>
+            <li>《十二小时》夜行跟拍 · 4K</li>
+            <li>《凌晨四点的便利店》短片</li>
+            <li>《夜班表》数据纪录短片</li>
+          </ul>
+          <div class="hwm-video__ops" style="margin-top:.9rem">
+            <button class="hwm-act" data-hwm-modal="submit">参与投稿</button>
+            <button class="hwm-act" data-hwm-copy="专题：迷失之后">分享专题</button>
+          </div>
+        </article>
+
+        <article class="hwm-topic">
+          <span class="hwm-topic__status">更新中 · 第 3 期</span>
+          <h3>把手艺拍下来</h3>
+          <p style="font-size:.88rem;color:var(--hwm-sub);margin:0">聚焦城市里的手作与小作坊，记录技艺与手艺人的日常节奏，强调现场声与不修饰的双手。</p>
+          <ul>
+            <li>《一张椅子的七十二小时》</li>
+            <li>《修表铺的午后》人物短片</li>
+            <li>《手作人访谈录》第三期</li>
+          </ul>
+          <div class="hwm-video__ops" style="margin-top:.9rem">
+            <button class="hwm-act" data-hwm-modal="submit">参与投稿</button>
+            <button class="hwm-act" data-hwm-copy="专题：把手艺拍下来">分享专题</button>
+          </div>
+        </article>
+
+        <article class="hwm-topic">
+          <span class="hwm-topic__status">已完结 · 可回看</span>
+          <h3>一拍即合 · 新人扶持季</h3>
+          <p style="font-size:.88rem;color:var(--hwm-sub);margin:0">面向首次投稿创作者的主题挑战，提供统一器材与制作指导，最终由社区投票产生年度新人。</p>
+          <ul>
+            <li>《我的第一条街头短片》合辑</li>
+            <li>新人作品点评直播回放</li>
+            <li>年度新人投票结果公示</li>
+          </ul>
+          <div class="hwm-video__ops" style="margin-top:.9rem">
+            <button class="hwm-act" data-hwm-modal="submit">报名下期</button>
+            <button class="hwm-act" data-hwm-copy="专题：一拍即合">分享专题</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵 -->
+  <section class="hwm-section hwm-section--alt" id="hwmAuthors" aria-label="创作者矩阵">
+    <div class="hwm-wrap">
+      <div class="hwm-sec-head">
+        <div>
+          <h2>创作者矩阵 · 官网签约的影像作者</h2>
+          <p>每一位创作者都有公开的作品与口碑数据，点击简介可查看完整档案。平台坚持内容生态的多元与包容。</p>
+        </div>
+      </div>
+      <div class="hwm-authors">
+        <article class="hwm-author">
+          <div class="hwm-avatar" style="background:linear-gradient(135deg,#00e0a5,#2e6cf0)">拾</div>
+          <div>
+            <h3>拾光不拾荒</h3>
+            <div class="hwm-author__field">擅长：街头教程 · 夜拍技巧</div>
+            <div class="hwm-author__num"><span>作品 86</span><span>粉丝 12.4万</span></div>
+            <p>前商业摄影师，转做街头影像教学四年。讲课风格偏实操，喜欢把参数、机位和判断过程全部摊开讲清楚，被社区称为「不藏私的老师」。近年在官网连载夜拍系列，累计播放超过两百万。</p>
+            <button class="hwm-author__link" data-hwm-modal="author" data-author="拾光不拾荒">查看作者档案 →</button>
+          </div>
+        </article>
+        <article class="hwm-author">
+          <div class="hwm-avatar" style="background:linear-gradient(135deg,#ff5c7a,#7c3aed)">越</div>
+          <div>
+            <h3>巷口阿越</h3>
+            <div class="hwm-author__field">擅长：在地文化 · 城市纪录</div>
+            <div class="hwm-author__num"><span>作品 54</span><span>粉丝 8.9万</span></div>
+            <p>本地长大的街巷记录者，习惯在同一个路口蹲守好几天，只为等到一段自然的对话。作品节奏偏慢，但细节密度极高，常被新创作者当作在地纪录的参考样本。</p>
+            <button class="hwm-author__link" data-hwm-modal="author" data-author="巷口阿越">查看作者档案 →</button>
+          </div>
+        </article>
+        <article class="hwm-author">
+          <div class="hwm-avatar" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">剪</div>
+          <div>
+            <h3>三分剪辑室</h3>
+            <div class="hwm-author__field">擅长：流程拆解 · 后期教学</div>
+            <div class="hwm-author__num"><span>作品 112</span><span>粉丝 15.7万</span></div>
+            <p>由两位剪辑师组成的双人工作室，擅长把完整项目从脚本到成片的流程切成可复用的模板。官网多支教程类精品内容出自他们之手，附带素材包常年位居下载榜前列。</p>
+            <button class="hwm-author__link" data-hwm-modal="author" data-author="三分剪辑室">查看作者档案 →</button>
+          </div>
+        </article>
+        <article class="hwm-author">
+          <div class="hwm-avatar" style="background:linear-gradient(135deg,#06b6d4,#22c55e)">满</div>
+          <div>
+            <h3>声场小满</h3>
+            <div class="hwm-author__field">擅长：声音设计 · 环境采集</div>
+            <div class="hwm-author__num"><span>作品 47</span><span>粉丝 6.1万</span></div>
+            <p>声音设计师出身，主张「先听见，再看见」。作品多从一段环境声出发，再倒推画面结构。她在官网连载的声音采集记，是许多纪录片新手入门的第一课。</p>
+            <button class="hwm-author__link" data-hwm-modal="author" data-author="声场小满">查看作者档案 →</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 社区口碑 + 榜单 -->
+  <section class="hwm-section" id="hwmCommunity" aria-label="社区口碑">
+    <div class="hwm-wrap">
+      <div class="hwm-sec-head">
+        <div>
+          <h2>社区口碑 · 评分摘要与真实短评</h2>
+          <p>评分来自官网观看后的自主评价，不作筛选。我们相信真实反馈比宣传语更有力量。</p>
+        </div>
+        <span class="hwm-tag">共 4,286 条评价</span>
+      </div>
+
+      <div class="hwm-score">
+        <div class="hwm-score__big">
+          <b>4.7</b>
+          <span>综合评分 / 5.0</span>
+        </div>
+        <div class="hwm-score__bars">
+          <div class="hwm-bar"><span>画质</span><i><em style="width:96%"></em></i><span>4.8</span></div>
+          <div class="hwm-bar"><span>内容</span><i><em style="width:94%"></em></i><span>4.7</span></div>
+          <div class="hwm-bar"><span>社区</span><i><em style="width:90%"></em></i><span>4.5</span></div>
+          <div class="hwm-bar"><span>更新</span><i><em style="width:92%"></em></i><span>4.6</span></div>
+        </div>
+      </div>
+
+      <div class="hwm-quotes">
+        <blockquote class="hwm-quote">
+          <p>「第一次看到有人认真拍夜班的人，不是把他们当素材，而是当邻居。看完之后我改了通勤路线，开始注意路上的店。」</p>
+          <footer>— 用户 林间小径 · 观看 38 部</footer>
+        </blockquote>
+        <blockquote class="hwm-quote hwm-quote--alt">
+          <p>「教程是真的能跟着做，不是讲概念。跟着官网那套夜拍清单拍了第一条片子，评论区给了我很多具体建议，社区氛围很好。」</p>
+          <footer>— 用户 阿七 · 新晋创作者</footer>
+        </blockquote>
+        <blockquote class="hwm-quote">
+          <p>「缺点也说：部分专题更新节奏偏慢，等一集要等挺久。不过画质和声音处理确实在线，值得等。」</p>
+          <footer>— 用户 南山 · 观看 210 部</footer>
+        </blockquote>
+        <blockquote class="hwm-quote hwm-quote--alt">
+          <p>「4K 片源下载很方便，出差路上也能离线看。希望后面能多一点短时长的高密度内容，通勤看正合适。」</p>
+          <footer>— 用户 通勤两小时 · 会员三年</footer>
+        </blockquote>
+        <blockquote class="hwm-quote">
+          <p>「投过一次稿，被退回来但附了很详细的修改意见，编辑甚至标了具体时间码。这种反馈比直接通过更有价值。」</p>
+          <footer>— 用户 一根灯管 · 投稿人</footer>
+        </blockquote>
+        <blockquote class="hwm-quote hwm-quote--alt">
+          <p>「线下观影会去过两次，人不多但聊得很深。看得出来这个品牌是认真在做内容，而不是在做人设。」</p>
+          <footer>— 用户 老麦 · 城市站点志愿者</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 数据榜单 -->
+  <section class="hwm-section hwm-section--alt" id="hwmRank" aria-label="数据榜单">
+    <div class="hwm-wrap">
+      <div class="hwm-sec-head">
+        <div>
+          <h2>数据榜单 · 本周热度 / 新人 / 口碑</h2>
+          <p>榜单每周一更新，数据来自官网真实播放与互动，不接受付费置顶。</p>
+        </div>
+      </div>
+      <div class="hwm-rank">
+        <div class="hwm-rank__col">
+          <h3>热度榜</h3>
+          <ol>
+            <li><b>迷失之后：城市夜行者的十二小时</b> · 12.6 万播放</li>
+            <li><b>夜行攻略：把陌生街区拍出故事感</b> · 8.7 万播放</li>
+            <li><b>迷失地图：三条被遗忘的城市支路</b> · 6.2 万播放</li>
+            <li><b>从脚本到成片：5 分钟短片流程</b> · 5.4 万播放</li>
+          </ol>
+        </div>
+        <div class="hwm-rank__col">
+          <h3>新人榜</h3>
+          <ol>
+            <li><b>半盏灯</b> · 首作《十二点的阳台》</li>
+            <li><b>水泥地导演</b> · 首作《桥下三分钟》</li>
+            <li><b>周末不出门</b> · 首作《窗边的声音》</li>
+            <li><b>小城切片</b> · 首作《一条河的早班》</li>
+          </ol>
+        </div>
+        <div class="hwm-rank__col">
+          <h3>口碑榜</h3>
+          <ol>
+            <li><b>凌晨四点的便利店</b> · 口碑 4.9</li>
+            <li><b>深夜访谈：为什么愿意在夜里出门</b> · 4.8</li>
+            <li><b>一张椅子的七十二小时</b> · 4.8</li>
+            <li><b>城市声音采集记</b> · 4.7</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 企业动态 + FAQ + 合作 -->
+  <section class="hwm-section" id="hwmNews" aria-label="企业动态">
+    <div class="hwm-wrap">
+      <div class="hwm-sec-head">
+        <div>
+          <h2>企业动态 · 官方发布与内容更新日志</h2>
+          <p>关于品牌、平台与内容生态的最新消息，均由官网同步发布。</p>
+        </div>
+      </div>
+      <div class="hwm-grid-2">
+        <div>
+          <ul class="hwm-news">
+            <li>
+              <time datetime="2026-11-20">2026-11-20</time>
+              <div><b>创作者扶持计划第 7 期开放报名</b><p>本期提供 12 个制作基金名额，单笔最高 5 万元，并开放设备借用与剪辑工位，报名截止 12 月 18 日。</p></div>
+            </li>
+            <li>
+              <time datetime="2026-11-15">2026-11-15</time>
+              <div><b>「迷失之后」第二季 4K 正版上线</b><p>新增六集城市夜行影像，全部提供 4K 源文件与多码率自适应播放，支持离线收藏。</p></div>
+            </li>
+            <li>
+              <time datetime="2026-11-08">2026-11-08</time>
+              <div><b>官网专题页改版完成</b><p>专题页支持按城市、题材、时长筛选，新增主理人档案与更新日历，移动端阅读体验同步优化。</p></div>
+            </li>
+            <li>
+              <time datetime="2026-10-30">2026-10-30</time>
+              <div><b>与四所高校影视专业达成实习合作</b><p>平台将每年接收实习生参与真实项目制作，履行企业社会责任，相关岗位在官网招聘页公布。</p></div>
+            </li>
+            <li>
+              <time datetime="2026-10-22">2026-10-22</time>
+              <div><b>「虎威放映室」线下观影会启动</b><p>首站落地城市站点 03，12 月 6 日开放报名，每场限 60 人，映后设创作者对谈环节。</p></div>
+            </li>
+          </ul>
+          <h3 style="margin-top:1.6rem">合作品牌与伙伴</h3>
+          <div class="hwm-partners">
+            <div class="hwm-partner"><b>光影器材社</b>长期设备支持</div>
+            <div class="hwm-partner"><b>声谷音频</b>正版音乐授权</div>
+            <div class="hwm-partner"><b>城市书店联盟</b>放映场地伙伴</div>
+            <div class="hwm-partner"><b>在地影像计划</b>联合出品方</div>
+          </div>
+        </div>
+
+        <div id="hwmFaq">
+          <h3>FAQ 帮助中心</h3>
+          <div class="hwm-faq">
+            <details>
+              <summary>如何投稿到 av虎威迷失网站？</summary>
+              <p>点击页面任意「投稿 / 报名」按钮，填写作品信息与素材授权清单，审核通常在 5 个工作日内完成。通过后会收到官方发布标识与排期通知。</p>
+            </details>
+            <details>
+              <summary>官网的视频可以下载吗？</summary>
+              <p>重点专题与部分教程类精品内容提供高清下载，需登录账号后操作。下载文件仅限个人观看与学习，不得二次商用或剪辑拼接。</p>
+            </details>
+            <details>
+              <summary>创作者扶持计划需要什么条件？</summary>
+              <p>面向有完整作品或明确拍摄计划的创作者，不设粉丝门槛。新人可凭选题方案报名，评审会看方案的可执行性与现场感，而非过往流量。</p>
+            </details>
+            <details>
+              <summary>评分和榜单是可以买的吗？</summary>
+              <p>不可以。评分来自观看后的自主评价，榜单只依据官网真实播放与互动数据，不接受付费置顶。如发现异常数据可提交反馈。</p>
+            </details>
+            <details>
+              <summary>商业合作有哪些形式？</summary>
+              <p>目前提供品牌定制影像、城市宣传片与线下放映合作三类。所有商业内容会带明确标识，不与应用内原创推荐混排。</p>
+            </details>
+            <details>
+              <summary>如何加入线下观影会？</summary>
+              <p>每场活动在官网与社区同步开放报名，名额有限，先到先得。报名成功后会收到入场凭证，活动全程免费。</p>
+            </details>
+            <details>
+              <summary>内容被误判或需要申诉怎么办？</summary>
+              <p>可在视频页点击「反馈」提交申诉，附上素材来源说明。内容团队会在 3 个工作日内复核并回复处理结果。</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作灵感 / 投稿入口 -->
+  <section class="hwm-section hwm-section--alt" aria-label="创作灵感与投稿">
+    <div class="hwm-wrap">
+      <div class="hwm-cta">
+        <div>
+          <h2>创作灵感 · 让下一次迷失成为一支片子</h2>
+          <p>官方提供选题灵感、脚本模板与剪辑思路，社区每周更新挑战主题。把你走过的路拍下来，投稿到 av虎威迷失网站，让更多人看见。</p>
+        </div>
+        <div class="hwm-cta__btns">
+          <button class="hwm-btn" data-hwm-modal="submit">立即投稿</button>
+          <button class="hwm-btn hwm-btn--ghost" data-hwm-modal="inspire">查看灵感清单</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- S8 页脚 -->
+<footer class="hwm-footer">
+  <div class="hwm-wrap">
+    <div class="hwm-footer__grid">
+      <div class="hwm-footer__about">
+        <h4>av虎威迷失网站</h4>
+        <p>专业影像视频品牌平台，深耕城市夜行与在地文化的内容生态。官方网站持续运营，坚持原创、正版与高清，致力于成为创作者与用户值得信赖的内容社区。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#hwmFocus">焦点内容</a></li>
+          <li><a href="#hwmTopics">专题企划</a></li>
+          <li><a href="#hwmRank">数据榜单</a></li>
+          <li><a href="#hwmAuthors">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>品牌</h4>
+        <ul>
+          <li><a href="#hwmExplore">关键词解析</a></li>
+          <li><a href="#hwmNews">企业动态</a></li>
+          <li><a href="#hwmCommunity">社区口碑</a></li>
+          <li><a href="#hwmFaq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><button class="hwm-author__link" data-hwm-modal="submit">投稿与报名</button></li>
+          <li><button class="hwm-author__link" data-hwm-modal="report">意见反馈</button></li>
+          <li><button class="hwm-author__link" data-hwm-copy="av虎威迷失网站 官方网站">分享本站</button></li>
+          <li><button class="hwm-author__link" data-hwm-modal="inspire">创作灵感</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="hwm-footer__bottom">
+      <span>© 2026 av虎威迷失网站 官方网站 · 版权所有 · 持续运营中</span>
+      <span>备案号：影ICP备 2026-1108 号 · 内容均获授权 · 高清正版</span>
+    </div>
+  </div>
+</footer>
+
+<button class="hwm-top" id="hwmTopBtn" aria-label="回到顶部">↑</button>
+<div class="hwm-toast" id="hwmToast" role="status" aria-live="polite"></div>
+
+<div class="hwm-modal" id="hwmModal" role="dialog" aria-modal="true" aria-labelledby="hwmModalTitle">
+  <div class="hwm-modal__box">
+    <button class="hwm-modal__close" id="hwmModalClose" aria-label="关闭弹窗">关闭</button>
+    <h3 id="hwmModalTitle">提示</h3>
+    <div id="hwmModalBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toast = document.getElementById('hwmToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('is-show'); }, 2200);
+  }
+
+  /* 公告条关闭 */
+  var notice = document.getElementById('hwmNotice');
+  var noticeClose = document.getElementById('hwmNoticeClose');
+  if(noticeClose){
+    noticeClose.addEventListener('click', function(){
+      notice.style.display = 'none';
+    });
+  }
+
+  /* 移动端导航折叠 */
+  var burger = document.getElementById('hwmBurger');
+  var nav = document.getElementById('hwmNav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 搜索前端反馈 */
+  var searchForm = document.getElementById('hwmSearchForm');
+  var searchInput = document.getElementById('hwmSearchInput');
+  var searchHint = document.getElementById('hwmSearchHint');
+  var keywordIndex = [
+    {key:'夜行', tip:'夜行'},
+    {key:'手作', tip:'手作'},
+    {key:'访谈', tip:'访谈'},
+    {key:'教程', tip:'教程'},
+    {key:'声音', tip:'声音设计'},
+    {key:'迷失', tip:'迷失专题'},
+    {key:'城市', tip:'城市探索'},
+    {key:'新人', tip:'新人榜'}
+  ];
+  function feedbackSearch(q){
+    q = (q || '').trim();
+    if(!q){
+      searchHint.innerHTML = '提示：可搜索「夜行」「手作」「访谈」等关键词';
+      return;
+    }
+    var hit = null;
+    for(var i=0;i<keywordIndex.length;i++){
+      if(q.indexOf(keywordIndex[i].key) !== -1 || keywordIndex[i].key.indexOf(q) !== -1){
+        hit = keywordIndex[i];
+        break;
+      }
+    }
+    if(hit){
+      searchHint.innerHTML = '已匹配「<strong>' + hit.tip + '</strong>」相关内容，正在为你定位焦点区 · 可在上方导航浏览';
+      var target = document.getElementById('hwmFocus');
+      if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+    }else{
+      searchHint.innerHTML = '暂未找到「' + q.replace(/[<>&]/g,'') + '」的直接条目，试试「夜行」「教程」「访谈」等关键词';
+    }
+  }
+  if(searchForm){
+    searchForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      feedbackSearch(searchInput.value);
+    });
+  }
+  if(searchInput){
+    var inputTimer = null;
+    searchInput.addEventListener('input', function(){
+      clearTimeout(inputTimer);
+      inputTimer = setTimeout(function(){ feedbackSearch(searchInput.value); }, 320);
+    });
+  }
+
+  /* 点赞 +1 切换 */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-hwm-like]');
+    if(likeBtn){
+      var span = likeBtn.querySelector('span');
+      var base = parseInt(likeBtn.getAttribute('data-base') || (span ? span.textContent.replace(/[^\d]/g,'') : '0'), 10) || 0;
+      likeBtn.setAttribute('data-base', base);
+      var on = likeBtn.classList.toggle('is-on');
+      var num = on ? base + 1 : base;
+      if(span) span.textContent = num.toLocaleString();
+      likeBtn.firstChild.nodeValue = on ? '♥ 已赞 ' : '♡ 点赞 ';
+      showToast(on ? '已点赞，感谢支持原创内容' : '已取消点赞');
+      return;
+    }
+
+    var favBtn = e.target.closest('[data-hwm-fav]');
+    if(favBtn){
+      var favOn = favBtn.classList.toggle('is-fav');
+      favBtn.textContent = favOn ? '★ 已收藏' : '☆ 收藏';
+      showToast(favOn ? '已收藏到「我的片单」' : '已取消收藏');
+      return;
+    }
+  });
+
+  /* 弹窗 */
+  var modal = document.getElementById('hwmModal');
+  var modalTitle = document.getElementById('hwmModalTitle');
+  var modalBody = document.getElementById('hwmModalBody');
+  var modalClose = document.getElementById('hwmModalClose');
+  function openModal(title, html){
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    modal.classList.add('is-open');
+  }
+  function closeModal(){
+    modal.classList.remove('is-open');
+  }
+  if(modalClose) modalClose.addEventListener('click', closeModal);
+  if(modal) modal.addEventListener('click', function(e){
+    if(e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeModal();
+  });
+
+  var modals = {
+    submit: {
+      title: '投稿 / 报名入口',
+      html: '<p>av虎威迷失网站官网欢迎所有真实记录者。投稿前请准备：作品文件或链接、3 张剧照、素材授权清单、200 字以内作品简介。</p>' +
+            '<ul><li>审核周期：5 个工作日内</li><li>通过后获得官方发布标识与排期</li><li>新人可凭选题方案报名扶持计划</li></ul>' +
+            '<p>提交邮箱：submit@huwei-mishi.example（示例邮箱，仅用于演示）</p>'
+    },
+    comment: {
+      title: '发表评论',
+      html: '<p>社区鼓励具体、有建设性的讨论。请围绕画面、声音、结构或拍摄方法展开，避免人身攻击与无信息量内容。</p>' +
+            '<details open><summary>优质评论示例</summary><p>「第七分钟那个固定机位很好，没有配乐反而更抓人，建议下次保留更多环境声。」</p></details>' +
+            '<p>评论将由社区共同维护，违规内容会被折叠。</p>'
+    },
+    report: {
+      title: '意见反馈',
+      html: '<p>如果内容存在误判、素材授权疑问或数据异常，请提交反馈。我们会在 3 个工作日内复核并回复。</p>' +
+            '<ul><li>反馈类型：内容申诉 / 数据异常 / 合作咨询</li><li>请附视频标题与具体时间码</li></ul>' +
+            '<p>反馈入口：feedback@huwei-mishi.example（示例邮箱，仅用于演示）</p>'
+    },
+    inspire: {
+      title: '创作灵感清单',
+      html: '<p>官方整理的五条选题思路，供新人参考：</p>' +
+            '<ul><li>找一个每天经过但从未停留的路口，连续拍七天。</li>' +
+            '<li>只用环境声完成一支两分钟短片，不使用音乐。</li>' +
+            '<li>采访一位夜班工作者，问题不超过三个。</li>' +
+            '<li>用同一机位记录一个店铺从开门到打烊。</li>' +
+            '<li>拍下你所在城市最安静的一分钟。</li></ul>' +
+            '<p>提交时标注所选题号，编辑会给出针对性反馈。</p>'
+    },
+    author: {
+      title: '作者档案',
+      html: ''
+    }
+  };
+
+  var authorInfo = {
+    '拾光不拾荒': '<p>官网签约创作者，街头影像教学作者。四年间完成 86 支作品，夜拍系列累计播放超过两百万。她的课程强调判断过程而非结论，所有参数与失败案例都会公开。</p><p>擅长领域：街头教程、夜拍技巧、设备实测。粉丝 12.4 万。</p>',
+    '巷口阿越': '<p>在地纪录创作者，习惯长时间蹲守同一地点。作品《迷失地图》系列被社区称为「城市支路考」。他主张镜头要退后一步，把空间留给真实发生的事。</p><p>擅长领域：在地文化、城市纪录、街区访谈。粉丝 8.9 万。</p>',
+    '三分剪辑室': '<p>双人剪辑工作室，专注把项目流程标准化。官网下载榜常客，教程素材包累计下载超过 30 万次。他们相信好的后期应该让观众忘记后期。</p><p>擅长领域：流程拆解、后期教学、色彩管理。粉丝 15.7 万。</p>',
+    '声场小满': '<p>声音设计师，作品多从一段环境声出发倒推画面。她在官网连载的声音采集记是纪录片新手的入门课，强调「先听见，再看见」。</p><p>擅长领域：声音设计、环境采集、配乐结构。粉丝 6.1 万。</p>'
+  };
+
+  /* 复制链接 */
+  document.addEventListener('click', function(e){
+    var copyBtn = e.target.closest('[data-hwm-copy]');
+    if(copyBtn){
+      var text = copyBtn.getAttribute('data-hwm-copy') || 'av虎威迷失网站';
+      var done = function(){ showToast('链接与标题已复制'); };
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(done).catch(function(){ showToast('复制失败，请手动复制'); });
+      }else{
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        try{ document.execCommand('copy'); done(); }catch(err){ showToast('复制失败，请手动复制'); }
+        document.body.removeChild(ta);
+      }
+      return;
+    }
+
+    var dlBtn = e.target.closest('[data-hwm-download]');
+    if(dlBtn){
+      showToast('素材包已加入下载队列，请前往个人中心查看');
+      return;
+    }
+
+    var modalBtn = e.target.closest('[data-hwm-modal]');
+    if(modalBtn){
+      var key = modalBtn.getAttribute('data-hwm-modal');
+      if(key === 'author'){
+        var name = modalBtn.getAttribute('data-author');
+        openModal('作者档案 · ' + (name || ''), authorInfo[name] || '<p>暂无档案。</p>');
+      }else{
+        var conf = modals[key];
+        if(conf){
+          openModal(conf.title, conf.html);
+        }
+      }
+    }
+  });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('hwmTopBtn');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520){ topBtn.classList.add('is-show'); }
+    else{ topBtn.classList.remove('is-show'); }
+  }, {passive:true});
+  if(topBtn){
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* 数据数字滚动 */
+  var counters = document.querySelectorAll('[data-count]');
+  function animateCount(el){
+    var target = parseInt(el.getAttribute('data-count'), 10) || 0;
+    var start = 0;
+    var dur = 1200;
+    var t0 = null;
+    function step(ts){
+      if(!t0) t0 = ts;
+      var p = Math.min((ts - t0) / dur, 1);
+      var val = Math.floor(start + (target - start) * (1 - Math.pow(1 - p, 3)));
+      el.textContent = val.toLocaleString() + (target >= 1000 ? '+' : '');
+      if(p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if('IntersectionObserver' in window && counters.length){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          animateCount(en.target);
+          io.unobserve(en.target);
+        }
+      });
+    }, {threshold:.4});
+    counters.forEach(function(c){ io.observe(c); });
+  }
+})();
+</script>
+</body>
+  </html>
